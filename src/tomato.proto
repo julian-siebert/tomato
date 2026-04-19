@@ -1,0 +1,17 @@
+syntax = "proto3";
+
+package tomato.v1;
+
+option go_package = "github.com/julian-siebert/tomato-go";
+
+service TomatoService {
+  rpc Prepare(Tomato) returns (Ketchup);
+}
+
+message Tomato {
+  string message = 1;
+}
+
+message Ketchup {
+  Tomato tomato = 1;
+}
