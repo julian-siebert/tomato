@@ -1,6 +1,7 @@
 [package]
 name = "tomato"
 version = "0.0.0"
+description = "A test project for Buffy"
 license = "MIT"
 authors = [
   { name = "Julian Siebert", email = "mail@julian-siebert.de" },
